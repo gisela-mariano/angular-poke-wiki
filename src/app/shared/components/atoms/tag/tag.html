@@ -1,0 +1,8 @@
+<div
+	class="tag rounded-md p-2"
+	[class]="_size()"
+	[style.background-color]="`var(--p-${color()}-400)`">
+	<span [style.color]="`var(--p-${color()}-800)`">
+		{{ _label() }}
+	</span>
+</div>

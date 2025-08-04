@@ -1,0 +1,11 @@
+.tag {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--sm {
+		font-size: 0.8rem;
+		height: 30px;
+	}
+}
