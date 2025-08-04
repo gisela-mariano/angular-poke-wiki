@@ -1,0 +1,32 @@
+.card {
+	max-width: 350px;
+
+	&__main {
+		background-color: white;
+		border-radius: 1rem;
+		font-weight: bold;
+
+		&__container-image {
+			width: 100%;
+			margin-bottom: 32px;
+			display: flex;
+			justify-content: center;
+			position: relative;
+
+			img {
+				position: absolute;
+				bottom: -48px;
+			}
+		}
+
+		span {
+			font-size: 0.9rem;
+			color: var(--p-gray-400);
+		}
+
+		h2 {
+			font-size: 1.2rem;
+			color: var(--p-neutral-800);
+		}
+	}
+}

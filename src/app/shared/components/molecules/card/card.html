@@ -1,0 +1,22 @@
+<div class="card flex flex-col content-center gap-3 p-8">
+	<header class="card__header flex justify-center"></header>
+
+	<main class="card__main flex flex-col items-center gap-2 pb-8">
+		<div class="card__main__container-image">
+			<img [src]="spriteUrl()" [alt]="`image ${name()}`" />
+		</div>
+
+		<span>Nº {{ identifierNumber() }}</span>
+
+		<h2>{{ name() }}</h2>
+
+		<div class="card__container-tags flex justify-center gap-2">
+			@for (tag of tags(); track $index) {
+				<app-tag
+					[label]="tag.label"
+					[color]="tag.color"
+					[options]="{ upperCase: true }" />
+			}
+		</div>
+	</main>
+</div>
